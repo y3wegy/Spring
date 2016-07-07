@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+       default-autowire="no"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.spring.demo.simple"/>
+
+    <bean id="simple" class="com.spring.demo.simple.SimpleBean" scope="singleton"
+          lazy-init="false" init-method="init" destroy-method="preDestory">
+        <property name="name" value="Chen,Rui"/>
+    </bean>
+
+    <bean id="annotationSimple" class="com.spring.demo.simple.AnnotationBean" scope="singleton">
+        <property name="userName" value="Chen,Rui"/>
+    </bean>
+
+</beans>
