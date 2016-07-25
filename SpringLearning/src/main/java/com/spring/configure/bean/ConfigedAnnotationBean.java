@@ -1,4 +1,4 @@
-package com.spring.demo.configure.bean;
+package com.spring.configure.bean;
 
 import org.springframework.stereotype.Component;
 

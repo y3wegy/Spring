@@ -1,6 +1,7 @@
-package com.spring.demo.configure.configbean;
+package com.spring.configure.configbean;
 
-import com.spring.demo.simple.AnnotationBean;
+import com.spring.simple.AnnotationBean;
+import com.spring.simple.AnnotationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

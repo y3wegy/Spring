@@ -1,4 +1,4 @@
-import com.spring.demo.simple.SimpleBean;
+import com.spring.simple.SimpleBean;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

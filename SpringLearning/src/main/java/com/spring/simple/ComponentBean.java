@@ -1,14 +1,19 @@
-package com.spring.demo.simple;
+package com.spring.simple;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
+ * this bean will be auto scaned and add to application context
  * Created by a549238 on 11/20/2015.
  */
-public class AnnotationBean {
+@Scope("prototype")
+@Component("componentBean")
+public class ComponentBean {
     @Qualifier("Chen,Hairui")
     private String userName;
 
@@ -17,17 +22,17 @@ public class AnnotationBean {
     }
 
     public void funning() {
-        System.out.println("AnnotationBean says:" + userName);
+        System.out.println("ComponentBean says:" + userName);
     }
 
     @PostConstruct
     public void init() {
-        System.out.println("AnnotationBean init by annotation @PostConstrator");
+        System.out.println("ComponentBean init by PostConstruct");
     }
 
     @PreDestroy
     public void destory() {
-        System.out.println("AnnotationBean destory by annotation @PreDestroy");
+        System.out.println("ComponentBean destory by PreDestroy");
     }
 
 }

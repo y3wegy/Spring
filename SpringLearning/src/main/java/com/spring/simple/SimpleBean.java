@@ -1,4 +1,4 @@
-package com.spring.demo.simple;
+package com.spring.simple;
 
 /**
  * Created by a549238 on 11/20/2015.

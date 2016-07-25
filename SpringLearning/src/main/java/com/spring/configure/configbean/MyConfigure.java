@@ -1,6 +1,6 @@
-package com.spring.demo.configure.configbean;
+package com.spring.configure.configbean;
 
-import com.spring.demo.simple.SimpleBean;
+import com.spring.simple.SimpleBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

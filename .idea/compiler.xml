@@ -19,7 +19,7 @@
       </profile>
       <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="SpringLearning" />
@@ -28,6 +28,7 @@
     <bytecodeTargetLevel>
       <module name="Spring" target="1.5" />
       <module name="SpringLearning" target="1.5" />
+      <module name="WebSite" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
