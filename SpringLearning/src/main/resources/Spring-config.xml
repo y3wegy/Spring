@@ -11,8 +11,29 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <context:annotation-config/>
-    <context:component-scan base-package="com.spring.demo.simple"/>
+
+    <!--<util:properties id="someProperties" location="classpath:/someValues.properties"/>-->
+    <bean id="someProperties"
+          class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:/someValues.properties</value>
+                <value>classpath:/someValues2.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--<context:property-placeholder location="classpath:/someValues3.properties"/>-->
+    <bean id="someHolderProperties" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:/someValues3.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <context:component-scan base-package="com.spring.simple"/>
+    <context:component-scan base-package="com.spring.configure.bean"/>
 
     <bean id="simple" class="com.spring.simple.SimpleBean" scope="singleton"
           lazy-init="false" init-method="init" destroy-method="preDestory">

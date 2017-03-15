@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Import;
  * Created by a549238 on 11/20/2015.
  */
 @Configuration
-@ComponentScan("com.spring.demo.configure.bean")
+@ComponentScan("com.spring.configure.bean")
 @Import(MySubConfig1.class)
 public class MyConfigure {
 

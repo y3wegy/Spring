@@ -13,7 +13,7 @@ public class SpringConfigScanTest {
 
     @BeforeClass
     public static void init() {
-        annotationConfigApplicationContext = new AnnotationConfigApplicationContext("com/spring/demo/configure/configbean");
+        annotationConfigApplicationContext = new AnnotationConfigApplicationContext("com/spring/configure/configbean");
     }
 
     @AfterClass

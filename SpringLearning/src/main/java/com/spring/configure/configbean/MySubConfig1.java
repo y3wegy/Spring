@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class MySubConfig1 {
-    @Bean(name = "configAnnotationBean")
+    @Bean(name = "annotationBean")
     public AnnotationBean getAnnotationSimpleBean() {
         return new AnnotationBean();
     }
