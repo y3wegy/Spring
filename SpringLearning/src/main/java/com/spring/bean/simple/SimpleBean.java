@@ -1,4 +1,4 @@
-package com.spring.simple;
+package com.spring.bean.simple;
 
 /**
  * Created by a549238 on 11/20/2015.

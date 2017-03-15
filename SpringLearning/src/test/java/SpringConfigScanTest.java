@@ -1,4 +1,4 @@
-import com.spring.simple.SimpleBean;
+import com.spring.bean.simple.SimpleBean;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -13,7 +13,7 @@ public class SpringConfigScanTest {
 
     @BeforeClass
     public static void init() {
-        annotationConfigApplicationContext = new AnnotationConfigApplicationContext("com/spring/configure/configbean");
+        annotationConfigApplicationContext = new AnnotationConfigApplicationContext("com/spring/configure");
     }
 
     @AfterClass

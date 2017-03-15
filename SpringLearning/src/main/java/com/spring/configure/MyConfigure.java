@@ -1,6 +1,6 @@
-package com.spring.configure.configbean;
+package com.spring.configure;
 
-import com.spring.simple.SimpleBean;
+import com.spring.bean.simple.SimpleBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Import;
  * Created by a549238 on 11/20/2015.
  */
 @Configuration
-@ComponentScan("com.spring.configure.bean")
+@ComponentScan("com.spring.bean.scan")
 @Import(MySubConfig1.class)
 public class MyConfigure {
 

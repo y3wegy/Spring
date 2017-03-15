@@ -1,6 +1,6 @@
-import com.spring.simple.AnnotationBean;
-import com.spring.simple.ComponentBean;
-import com.spring.simple.SimpleBean;
+import com.spring.bean.simple.AnnotationBean;
+import com.spring.bean.scan.ComponentBean;
+import com.spring.bean.simple.SimpleBean;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

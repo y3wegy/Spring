@@ -32,15 +32,14 @@
         </property>
     </bean>
 
-    <context:component-scan base-package="com.spring.simple"/>
-    <context:component-scan base-package="com.spring.configure.bean"/>
+    <context:component-scan base-package="com.spring.bean.simple"/>
 
-    <bean id="simple" class="com.spring.simple.SimpleBean" scope="singleton"
+    <bean id="simple" class="com.spring.bean.simple.SimpleBean" scope="singleton"
           lazy-init="false" init-method="init" destroy-method="preDestory">
         <property name="name" value="Chen,Rui"/>
     </bean>
 
-    <bean id="annotationSimple" class="com.spring.simple.AnnotationBean" scope="singleton">
+    <bean id="annotationSimple" class="com.spring.bean.simple.AnnotationBean" scope="singleton">
         <property name="userName" value="Chen,Rui"/>
     </bean>
 

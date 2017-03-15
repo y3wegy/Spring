@@ -1,4 +1,4 @@
-package com.spring.simple;
+package com.spring.bean.simple;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 

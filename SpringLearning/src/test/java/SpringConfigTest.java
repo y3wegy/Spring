@@ -1,6 +1,6 @@
-import com.spring.configure.bean.ConfigedAnnotationBean;
-import com.spring.configure.configbean.MyConfigure;
-import com.spring.simple.SimpleBean;
+import com.spring.bean.scan.ConfigedAnnotationBean;
+import com.spring.configure.MyConfigure;
+import com.spring.bean.simple.SimpleBean;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

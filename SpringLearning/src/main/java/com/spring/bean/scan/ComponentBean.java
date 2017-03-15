@@ -1,4 +1,4 @@
-package com.spring.simple;
+package com.spring.bean.scan;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,6 +1,6 @@
 package spring.value;
 
-import com.spring.simple.ComponentBean;
+import com.spring.bean.scan.ComponentBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
